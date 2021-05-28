@@ -1,0 +1,6 @@
+.dice {
+    @include center-align;
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+}

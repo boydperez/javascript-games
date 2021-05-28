@@ -1,0 +1,65 @@
+.card {
+    width: 32rem;
+    height: 45rem;
+    background-color: $color-black-1;
+    border-radius: 10px;
+    transition: background-color .8s;
+
+    &__heading-primary {
+        text-align: center;
+
+        padding-top: 2rem;
+    }
+
+    &__total-score-block {
+        width: 15rem;
+        height: 15rem;
+        margin: 0 auto 6rem;
+        border-radius: 8px;
+        background-color: $color-white; 
+    }
+
+    &__heading-secondary {
+        text-align: center;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &__total-score {
+        text-align: center;
+    }
+
+    &__heading-tertiary {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__current-score {
+        width: 10rem;
+        height: 5rem;
+        margin: auto;
+        border-radius: 8px;
+        background-color: $color-white; 
+        position: relative;
+
+        & > span {
+
+            @include center-align;
+        }
+    }
+
+    .fa-map-pin {
+        @include center-align;
+
+        color: $color-green-light;
+        font-size: 2rem;
+        position: absolute;
+        left: 130%;
+        cursor: pointer;
+        visibility: hidden;
+
+        &:hover {
+            color: darken($color-green-light, 30%);
+        }
+    }
+}

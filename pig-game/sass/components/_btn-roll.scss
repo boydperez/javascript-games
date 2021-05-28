@@ -1,0 +1,21 @@
+.btn-roll {
+    @include horizontal-align;
+
+    width: 10.8rem;
+    height: 3.4rem;
+    background-color: $color-green-dark-1;
+    border: none;
+    outline: none;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 0 .4rem 1.2rem rgba(#000, .3);
+    visibility: hidden;
+
+    &:hover {
+        background-color: darken($color-green-dark-1, 10%);
+    }
+}

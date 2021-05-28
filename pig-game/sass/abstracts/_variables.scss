@@ -1,0 +1,13 @@
+// Colors
+$color-black-1: #383838;
+$color-black-2: #1A1A1A;
+
+$color-white: #FCFCFC;
+
+$color-green-light: #DDF0F0;   // Body
+$color-green-dark-1: #5FCACA;  // Roll dice btn
+$color-green-dark-2: #53B8B8;  // Player card win
+
+// height
+$height-header: 12rem;
+$height-playarea: calc(100vh - #{$height-header});

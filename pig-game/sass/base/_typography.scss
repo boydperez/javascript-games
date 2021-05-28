@@ -1,0 +1,66 @@
+.header__title {
+    @include font-rationale;
+
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-black-1;
+}
+
+.game-reset {
+    @include font-rationale;
+
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-black-1;
+}
+
+.card {
+
+    &__heading-primary {
+        @include font-rationale;
+
+        font-size: 3rem;
+        color: $color-white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    // Class to be inherited
+    .card_heading {
+
+        @include font-roboto;
+        
+        font-weight: 400;
+    }
+
+    &__heading-secondary {
+        @extend .card_heading;
+
+        text-transform: capitalize;
+        color: $color-black-2;
+        font-size: 1.9rem;
+    }
+
+    &__total-score {
+        @extend .card_heading;
+
+        font-size: 3rem;
+        color: $color-green-dark-1;
+    }
+
+    &__heading-tertiary {
+        @extend .card_heading;
+
+        color: $color-white;
+        font-size: 1.2rem;
+    }
+
+    &__current-score {
+        @extend .card_heading;
+
+        font-size: 1.8rem;
+        color: $color-black-2;
+    }
+}

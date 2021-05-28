@@ -1,0 +1,16 @@
+.playarea {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 20rem 0;
+    width: 100%;
+    height: $height-playarea;
+
+    &__left {
+        position: relative;
+
+    }
+    &__right {
+        position: relative;
+
+    }
+}

@@ -1,0 +1,31 @@
+.game-reset {
+    @include center-align;
+
+    top: 60rem;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(214, 95, 95); 
+    }
+}
+
+.winner-title {
+    @include vertical-align;
+
+    font-size: 16rem;
+    text-align: center;
+    width: 100%;
+    color: rgba(7, 129, 241, .26);
+    opacity: 0;
+    visibility: hidden;
+    text-transform: uppercase;
+    transition: opacity .5s;
+}
+
+.btn-roll-show {
+    visibility: visible !important;
+}
+
+.fa-map-pin-show {
+    visibility: visible !important;
+}

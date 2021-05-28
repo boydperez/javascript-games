@@ -1,0 +1,8 @@
+.header {
+    height: $height-header; 
+    position: relative;
+
+    &__title {
+        @include center-align;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2585a521e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header class="header">
+       <h1 class="header__title">Pig Game</h1>
+   </header> 
+
+   <section class="playarea">
+        <div class="playarea__left">
+            <div class="card card--1 u-margin-bottom-sm">
+                <h1 class="card__heading-primary u-margin-bottom-sm">Player 1</h1>
+                <div class="card__total-score-block">
+                    <h2 class="card__heading-secondary">Total Score</h2>
+                    <h2 class="card__total-score" id="player_1_total_score">0</h2>
+                </div>
+                <h3 class="card__heading-tertiary">Current Score</h3>
+                <h3 class="card__current-score"><span id="player_1_current_score">0</span><i class="fas fa-map-pin fa-map-pin-show" id="hold_1"></i></h3>
+            </div>
+
+            <button class="btn btn-roll btn-roll-show" id="player_1_btn">Roll Dice</button>
+        </div>
+
+        <div class="playarea__right">
+            <div class="card card--2 u-margin-bottom-sm">
+                <h1 class="card__heading-primary u-margin-bottom-sm">Player 2</h1>
+                <div class="card__total-score-block">
+                    <h2 class="card__heading-secondary">Total Score</h2>
+                    <h2 class="card__total-score" id="player_2_total_score">0</h2>
+                </div>
+                <h3 class="card__heading-tertiary">Current Score</h3>
+                <h3 class="card__current-score"><span id="player_2_current_score">0</span><i class="fas fa-map-pin" id="hold_2"></i></h3>
+            </div>
+
+            <button class="btn btn-roll" id="player_2_btn">Roll Dice</button>
+        </div>
+   </section>
+
+   <img src="img/dice-1.png" alt="Dice" class="dice">
+   <h1 class="game-reset">Reset Game</h1>
+   <h1 class="winner-title">Player 1 wins</h1>
+
+   <!-- Scripts -->
+   <script src="scripts/index.js"></script>
+
+</body>
+</html>

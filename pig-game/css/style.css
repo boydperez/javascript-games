@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: #DDF0F0;
+}
+
+.header__title {
+  font-family: "Rationale", sans-serif;
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #383838;
+}
+
+.game-reset {
+  font-family: "Rationale", sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #383838;
+}
+
+.card__heading-primary {
+  font-family: "Rationale", sans-serif;
+  font-size: 3rem;
+  color: #FCFCFC;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card .card_heading, .card .card__current-score, .card .card__heading-tertiary, .card .card__total-score, .card .card__heading-secondary {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.card__heading-secondary {
+  text-transform: capitalize;
+  color: #1A1A1A;
+  font-size: 1.9rem;
+}
+.card__total-score {
+  font-size: 3rem;
+  color: #5FCACA;
+}
+.card__heading-tertiary {
+  color: #FCFCFC;
+  font-size: 1.2rem;
+}
+.card__current-score {
+  font-size: 1.8rem;
+  color: #1A1A1A;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 6rem !important;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 10rem !important;
+}
+
+.card {
+  width: 32rem;
+  height: 45rem;
+  background-color: #383838;
+  border-radius: 10px;
+  transition: background-color 0.8s;
+}
+.card__heading-primary {
+  text-align: center;
+  padding-top: 2rem;
+}
+.card__total-score-block {
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto 6rem;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+}
+.card__heading-secondary {
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+.card__total-score {
+  text-align: center;
+}
+.card__heading-tertiary {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.card__current-score {
+  width: 10rem;
+  height: 5rem;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  position: relative;
+}
+.card__current-score > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .fa-map-pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #DDF0F0;
+  font-size: 2rem;
+  position: absolute;
+  left: 130%;
+  cursor: pointer;
+  visibility: hidden;
+}
+.card .fa-map-pin:hover {
+  color: #73c1c1;
+}
+
+.btn-roll {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10.8rem;
+  height: 3.4rem;
+  background-color: #5FCACA;
+  border: none;
+  outline: none;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+.btn-roll:hover {
+  background-color: #3db9b9;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+}
+
+.header {
+  height: 12rem;
+  position: relative;
+}
+.header__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.playarea {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 20rem 0;
+  width: 100%;
+  height: calc(100vh - 12rem);
+}
+.playarea__left {
+  position: relative;
+}
+.playarea__right {
+  position: relative;
+}
+
+.game-reset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 60rem;
+  cursor: pointer;
+}
+.game-reset:hover {
+  color: #d65f5f;
+}
+
+.winner-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16rem;
+  text-align: center;
+  width: 100%;
+  color: rgba(7, 129, 241, 0.26);
+  opacity: 0;
+  visibility: hidden;
+  text-transform: uppercase;
+  transition: opacity 0.5s;
+}
+
+.btn-roll-show {
+  visibility: visible !important;
+}
+
+.fa-map-pin-show {
+  visibility: visible !important;
+}
+
+/*# sourceMappingURL=style.css.map */
